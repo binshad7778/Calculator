@@ -1,0 +1,51 @@
+.btn{
+    width: 70px;
+    height: 50px;
+    border-radius: 10px;
+    /* background-color: aquamarine; */
+    font-size: 20px;
+}
+.displaycalc{
+    width: 283px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: lightblue;
+    font-size: 30px;
+    
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background: #000; */
+    height: 100vh;
+    
+}
+.key{
+    background-color: crimson
+}
+
+.calc{
+    background-color: black;
+    width: 300px;
+    height: 30rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 24px;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+}
+.p1{
+    color: aliceblue;
+}
+.key2{
+    background-color: orange;
+}
+.key3{ 
+    background-color: crimson;
+
+}

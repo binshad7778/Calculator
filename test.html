@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <link rel="stylesheet" href="test1.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calc">
+        <form>
+          <P class="p1">CALCULATOR</P>
+          <input readonly="" class="displaycalc" type="text" name="dis" placeholder="0" /><br> <br>
+          <div class="part0">
+            <input
+              class="btn key3"
+              type="button"
+              onclick="dis.value +='%'"
+              value="%"
+            />
+            <input
+              class="btn key3"
+              type="button"
+              value="C/ON"
+              onclick="dis.value = dis.value.toString().slice(0,-100)"
+            />
+            <input
+              class="btn key3"
+              type="button"
+              value="OFF"
+              onclick="dis.value = ' '"
+              
+            />
+            <input
+              class="btn key"
+              type="button"
+              value="⌫"
+              onclick="dis.value = dis.value.toString().slice(0,-1)"
+            />
+          </div> <br>
+          <div class="part1">
+            <input
+              class="btn key1"
+              type="button"
+              onclick="dis.value +='7'"
+              value="7"
+            />
+            <input
+              class="btn key1"
+              type="button"
+              onclick="dis.value +='8'"
+              value="8"
+            />
+            <input
+              class="btn key1"
+              type="button"
+              onclick="dis.value +='9'"
+              value="9"
+            />
+            <input
+              class="btn key"
+              type="button"
+              onclick="dis.value +='*'"
+              value="x"
+            />
+          </div> <br>
+          <div class="part2">
+            <input
+              class="btn key1"
+              type="button"
+              onclick="dis.value +='4'"
+              value="4"
+            />
+            <input
+              class="btn key1"
+              type="button"
+              onclick="dis.value +='5'"
+              value="5"
+            />
+            <input
+              class="btn key1"
+              type="button"
+              onclick="dis.value +='6'"
+              value="6"
+            />
+            <input
+              class="btn key"
+              type="button"
+              onclick="dis.value +='-'"
+              value="-"
+            />
+          </div> <br>
+          <div class="part3">
+            <input
+              class="btn key1"
+              type="button"
+              onclick="dis.value +='1'"
+              value="1"
+            />
+            <input
+              class="btn key1"
+              type="button"
+              onclick="dis.value +='2'"
+              value="2"
+            />
+            <input
+              class="btn key1"
+              type="button"
+              onclick="dis.value +='3'"
+              value="3"
+            />
+            <input
+              class="btn key"
+              type="button"
+              onclick="dis.value +='+'"
+              value="+"
+            />
+          </div> <br>
+          <div class="part4">
+            <input
+              class="btn "
+              type="button"
+              onclick="dis.value +='.'"
+              value="."
+            />
+            <input
+              class="btn key1"
+              type="button"
+              onclick="dis.value +='0'"
+              value="0"
+            />
+            <input
+              class="btn "
+              type="button"
+              onclick="dis.value +='/'"
+              value="/"
+            />
+            <input
+              class="btn key2"
+              type="button"
+              value="="
+              onclick="dis.value = eval(dis.value)"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
